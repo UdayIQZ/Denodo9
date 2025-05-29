@@ -1,5 +1,5 @@
 ﻿CREATE OR REPLACE WRAPPER JDBC bv_camp
-    FOLDER = '/1 - dataconnection/1 - data sources'
+    FOLDER = '/1 - dataconnection/2 - base views'
     DATASOURCENAME=ds_sql_marketingisnights_copy
     SQLSENTENCE='select * from dbo.Campaigns'   
     OUTPUTSCHEMA (
@@ -23,7 +23,7 @@ CREATE OR REPLACE TABLE bv_camp I18N us_est (
         status:text (sourcetypeid = '12', sourcetypedecimals = '0', sourcetypesize = '50'),
         date_created:timestamp (sourcetypeid = '93', sourcetypedecimals = '3', sourcetypesize = '23')
     )
-    FOLDER = '/1 - dataconnection/1 - data sources'
+    FOLDER = '/1 - dataconnection/2 - base views'
     CACHE OFF
     TIMETOLIVEINCACHE DEFAULT
     ADD SEARCHMETHOD bv_camp(
