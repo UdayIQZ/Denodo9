@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE DATABASE neo4j_conn '';
+
+ALTER DATABASE neo4j_conn
+  CHARSET DEFAULT;
+
