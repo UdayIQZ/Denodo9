@@ -1,4 +1,0 @@
-ALTER ROLE support_role
-GRANT ROLE metadata_export
-GRANT CONNECT, METADATA, EXECUTE ON neo4j_conn;
-
